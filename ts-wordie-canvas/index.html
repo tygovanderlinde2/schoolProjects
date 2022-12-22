@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WORDIE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Raleway:wght@400;700" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game">
+        <div id="name">WORDIE</div>
+        <canvas id="guesses" height="400px" width="400px"></canvas>
+        <input type="text" id="inputGuess" maxlength="5">
+        <button id="makeguess">Make Guess</button>
+        <button id="restart">Restart</button>
+        <button id="includedWords" class="redBackground">Included words only</button>
+    </div>
+    <script src="build/app.js" type="module"></script>
+</body>
+
+</html>
