@@ -103,16 +103,15 @@ export default class Catagotchi {
     CanvasUtil.writeTextToCanvas(canvas, this.catHunger.getValue().toString(), 270, 190);
 
     if (this.catAlive) {
-      if (this.catStatus == 'Happy') {
+      if (this.catStatus === 'Happy') {
         CanvasUtil.drawImage(canvas, this.catStatusImgHappy, 0, 10);
       }
-      if (this.catStatus == 'Okay') {
+      if (this.catStatus === 'Okay') {
         CanvasUtil.drawImage(canvas, this.catStatusImgOkay, 0, 0);
       }
-      if (this.catStatus == 'Unhappy') {
+      if (this.catStatus === 'Unhappy') {
         CanvasUtil.drawImage(canvas, this.catStatusImgUnhappy, 0, 20);
       }
-
     } else {
       CanvasUtil.clearCanvas(canvas);
       CanvasUtil.drawImage(canvas, this.catStatusImgDed, 0, 20);
@@ -123,7 +122,7 @@ export default class Catagotchi {
       if (this.catHunger.getValue() >= 10 && this.catEnergy.getValue() > 0) {
         deathReason = 'Starvation';
       }
-      CanvasUtil.writeTextToCanvas(canvas, deathReason, 145, 190, 'center', 'Sans Serif', 20, 'white')
+      CanvasUtil.writeTextToCanvas(canvas, deathReason, 145, 190, 'center', 'Sans Serif', 20, 'white');
     }
   }
 }
